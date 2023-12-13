@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+ul,ol{
+    list-style: none;
+}
+/* common css ends */
+
+/* slider starts */
+
+.sliders{
+    margin-top: 30vh;
+}   
+.sliders .slider{
+    padding: 15px;
+}
+.sliders .slider img{
+    width: 100%;
+    transform: scale(60%);
+    transition: .5s ease-in-out;
+}
+.sliders .slider.slick-center img{
+    transform: scale(100%);
+    border-radius: 20px;
+}
+.arrows span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border: solid #ccc 1px;
+    display: block;
+    position: absolute;
+    top: 52%;
+    transition: .35s ease-in;
+}
+.arrows span:hover{
+    background-color: #222;
+    border:1px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+.arrows span.leftArrow{
+    left: 41%;
+}
+.arrows span.rightArrow{
+    right: 41%;
+}
+.slick-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.slick-dots li{
+    display: inline-block;
+    margin-left: 5px;
+}
+.slick-dots li button{
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: gray;
+}
+.slick-dots li.slick-active button{
+    background-color: #222;
+}
